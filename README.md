@@ -1,2 +1,4 @@
-# Met_Est_2025
-Repositorio del curso de métodos estadísticos Agosto 2025 del programa ingeniero forestal
+# Curso de Métodos Estadísticos
+## Licenciatura en Ingenieria Forestal
+
+Repositorio del curso de métodos estadísticos Agosto 2025 del programa Ingeniero Forestal
