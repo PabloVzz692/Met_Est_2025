@@ -24,6 +24,9 @@ boxplot(info$altura,
         col="red",
         #Main sirve para poner un titulo
         main= " Clase 3 semestre")
+colores=c("orange","skyblue", "yellow")
+boxplot(datos_meses,
+        col = colores)
 
 # Estadisticas descriptivas -----------------------------------------------
 
