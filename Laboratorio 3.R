@@ -49,7 +49,7 @@ head(conjunto) # muestra las primeras seis filas de la BD
 inventario <- read_csv(file)
 head(inventario)
 
-
+url <- "https://raw.githubusercontent.com/PabloVzz692/Met_Est_2025/refs/heads/main/cuadro1.csv"
 mean(trees$dbh) # El signo de $ informa que necesitamos la columna dbh
 ## [1] 15.64333
 sd(trees$dbh)
