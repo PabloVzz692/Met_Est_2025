@@ -6,7 +6,7 @@
 # Importar datos ----------------------------------------------------------
 
 Temperatura <- read.csv("Temperatura.csv", header= T)
-Temperatura <-read.csv("Nuevacarpeta/Temperatura.csv", header=T)
+Temperatura <-read.csv("Temperatura.csv", header=T)
 
 
 # Ingresar datos de manera manual -----------------------------------------
@@ -28,9 +28,29 @@ colores=c("orange","skyblue", "yellow")
 boxplot(datos_meses,
         col = colores)
 
-# Estadisticas descriptivas -----------------------------------------------
+url <- "https://repodatos.atdt.gob.mx/api_update/senasica/actividades_inspeccion_movilizacion/29_actividades-inspeccion-movilizacion.csv"
+
+inspeccion <- read.csv(url)
+head(inspeccion)
+senasica <- read.csv(prof_url_2)
+head(senasica)
+
+library(repmis) # No olvidar cargar la paquetería
+conjunto <- source_data("https://www.dropbox.com/s/hmsf07bbayxv6m3/cuadro1.csv?dl=1")
+## Downloading data from: https://www.dropbox.com/s/hmsf07bbayxv6m3/cuadro1.csv?dl=1
+## SHA-1 hash of the downloaded data file is:
+## 2bdde4663f51aa4198b04a248715d0d93498e7ba
+
+library(readr)
+file <- paste0("https://raw.githubusercontent.com/mgtagle/",
+               "202_Analisis_Estadistico_2020/master/cuadro1.csv")
+inventario <- read_csv(file)
+head(conjunto) # muestra las primeras seis filas de la BD
+inventario <- read_csv(file)
+head(inventario)
 
 
-
-
-
+mean(trees$dbh) # El signo de $ informa que necesitamos la columna dbh
+## [1] 15.64333
+sd(trees$dbh)
+## [1] 7.448892
