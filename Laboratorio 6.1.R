@@ -14,6 +14,18 @@ plot(faithful$waiting, faithful$eruptions,
 
 #Correlacionar las dos variables
 
+shapiro.test(faithful$eruptions)
+shapiro.test(faithful$waiting)
+
+#Person solo se utiliza con datos normales
+#=======================================
 cor.test(faithful$waiting, faithful$eruptions,
          method ="pearson" )
+
+
+#============================================
+#Spearman se utiliza como contraparte para datos no normales
+#================================================
+cor.test(faithful$waiting, faithful$eruptions,
+         method ="spearman")
 
